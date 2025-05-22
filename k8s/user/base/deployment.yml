@@ -12,9 +12,11 @@ spec:
       labels:
         app: user
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: user
-          image: vasapolrittideah/money-tracker-api:latest
+          image: vasapolrittideah/money-tracker-api-user:latest
           ports:
             - containerPort: 8080
           resources:
