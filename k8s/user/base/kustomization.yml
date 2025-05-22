@@ -1,4 +1,6 @@
 resources:
   - deployment.yml
   - service.yml
+  - configmap.yml
   - regcred-sealed.yaml
+  - secret-sealed.yaml
