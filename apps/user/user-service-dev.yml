@@ -1,6 +1,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
-metadataa:
+metadata:
   name: user-service-dev
   namespace: argocd
 spec:
@@ -8,11 +8,11 @@ spec:
 
   source:
     repoURL: https://github.com/vasapolrittideah/money-tracker-config
-    tragetRevision: HEAD
+    targetRevision: HEAD
     path: k8s/user/overlays/dev
   destination:
     server: https://kubernetes.default.svc
-    namespce: user-service-dev
+    namespace: user-service-dev
 
   syncPolicy:
     syncOptions:
