@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadataa:
+  name: money-tracker-argo-application
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/vasapolrittideah/money-tracker-config
+    tragetRevision: HEAD
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespce: money-tracker
+
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
