@@ -6,6 +6,9 @@ spec:
   selector:
     app: user
   ports:
-    - port: 8080
-      protocol: TCP
-      targetPort: 8080
+    - name: http
+      port: 8000
+      targetPort: 8000
+    - name: grpc
+      port: 9000
+      targetPort: 9000

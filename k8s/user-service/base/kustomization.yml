@@ -1,3 +1,5 @@
 resources:
   - deployment.yml
   - service.yml
+  - ingress-grpc.yml
+  - ingress-http.yml

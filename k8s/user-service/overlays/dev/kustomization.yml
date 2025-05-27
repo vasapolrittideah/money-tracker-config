@@ -5,3 +5,7 @@ resources:
   - secret-sealed.yml
 
 namespace: user-service-dev
+
+patches:
+  - path: ingress-grpc.yml
+  - path: ingress-http.yml
