@@ -27,3 +27,24 @@ spec:
             limits:
               memory: "128Mi"
               cpu: "500m"
+          env:
+            - name: ACCESS_TOKEN_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: auth-secret
+                  key: ACCESS_TOKEN_SECRET_KEY
+            - name: ACCESS_TOKEN_EXPIRES_IN
+              valueFrom:
+                configMapKeyRef:
+                  name: user-configmap
+                  key: ACCESS_TOKEN_EXPIRES_IN
+            - name: REFRESH_TOKEN_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: auth-secret
+                  key: REFRESH_TOKEN_SECRET_KEY
+            - name: REFESH_TOKEN_EXPIRES_IN
+              valueFrom:
+                configMapKeyRef:
+                  name: user-configmap
+                  key: REFESH_TOKEN_EXPIRES_IN
