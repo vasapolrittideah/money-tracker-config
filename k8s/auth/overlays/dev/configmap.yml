@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: user-configmap
+  name: auth-configmap
 data:
   ACCESS_TOKEN_EXPIRES_IN: "15m"
   REFESH_TOKEN_EXPIRES_IN: "7d"
