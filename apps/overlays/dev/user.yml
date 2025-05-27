@@ -4,7 +4,7 @@ metadata:
   name: user-service-dev
   namespace: argocd
 spec:
-  project: default
+  project: user-service-project
 
   source:
     repoURL: https://github.com/vasapolrittideah/money-tracker-config
