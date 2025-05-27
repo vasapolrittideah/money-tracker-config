@@ -1,2 +1,7 @@
 resources:
   - ../../base
+  - ../../../../apps/base
+  - configmap.yml
+  - secret-sealed.yml
+
+namespace: user-service-dev
