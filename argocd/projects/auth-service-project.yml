@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: auth-service-project
+  namespace: argocd
+spec:
+  description: Auth Service Project
+
+  sourceRepos:
+    - https://github.com/vasapolrittideah/money-tracker-config
+
+  destinations:
+    - namespace: auth-service-dev
+      server: https://kubernetes.default.svc
+
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
+
+  namespaceResourceWhitelist:
+    - group: "*"
+      kind: "*"
+
+  orphanedResources:
+    warn: true
