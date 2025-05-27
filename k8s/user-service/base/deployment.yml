@@ -18,7 +18,8 @@ spec:
         - name: user
           image: vasapolrittideah/money-tracker-api-user:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 8000
+            - containerPort: 9000
           resources:
             requests:
               memory: "64Mi"
@@ -52,3 +53,13 @@ spec:
                 secretKeyRef:
                   name: user-secret
                   key: POSTGRES_PASSWORD
+            - name: USER_SERVICE_HTTP_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: user-configmap
+                  key: USER_SERVICE_HTTP_PORT
+            - name: USER_SERVICE_GRPC_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: user-configmap
+                  key: USER_SERVICE_GRPC_PORT
