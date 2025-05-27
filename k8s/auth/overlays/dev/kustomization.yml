@@ -1,6 +1,6 @@
 resources:
   - ../../base
-  - ../../../../apps/base
+  # - ../../../../../apps/base
   - configmap.yml
   - secret-sealed.yml
 
