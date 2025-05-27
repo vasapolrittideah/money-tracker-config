@@ -15,7 +15,7 @@ spec:
     metadata:
       name: "{{service}}-{{env}}"
     spec:
-      project: "{{service}}-project"
+      project: default
       source:
         repoURL: https://github.com/vasapolrittideah/money-tracker-config
         targetRevision: HEAD
