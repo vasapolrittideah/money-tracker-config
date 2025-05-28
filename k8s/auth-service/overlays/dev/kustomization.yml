@@ -5,3 +5,6 @@ resources:
   - secret-sealed.yml
 
 namespace: auth-service-dev
+
+patches:
+  - path: ingress-http.yml

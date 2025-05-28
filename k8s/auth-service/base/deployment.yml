@@ -48,3 +48,18 @@ spec:
                 configMapKeyRef:
                   name: auth-configmap
                   key: REFESH_TOKEN_EXPIRES_IN
+            - name: AUTH_SERVICE_HTTP_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: auth-configmap
+                  key: AUTH_SERVICE_HTTP_PORT
+            - name: USER_SERVICE_GRPC_CONNECTION_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: auth-configmap
+                  key: USER_SERVICE_GRPC_CONNECTION_HOST
+            - name: USER_SERVICE_GRPC_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: auth-configmap
+                  key: USER_SERVICE_GRPC_PORT
