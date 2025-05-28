@@ -4,7 +4,7 @@ metadata:
   name: user-service-http-ingress
 spec:
   rules:
-    - host: http.user-service-dev.money-tracker.com
+    - host: http.user.money-tracker.dev.vasapolrittideah.com
       http:
         paths:
           - path: /

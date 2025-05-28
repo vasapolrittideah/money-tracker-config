@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: http.user-service.money-tracker.com
+    - host: http.user.money-tracker.vasapolrittideah.com
       http:
         paths:
           - path: /

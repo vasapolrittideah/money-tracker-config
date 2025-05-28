@@ -4,7 +4,7 @@ metadata:
   name: user-service-grpc-ingress
 spec:
   rules:
-    - host: grpc.user-service-dev.money-tracker.com
+    - host: grpc.user.money-tracker.dev.vasapolrittideah.com
       http:
         paths:
           - path: /
