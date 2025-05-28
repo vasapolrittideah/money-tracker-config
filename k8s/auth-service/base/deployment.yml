@@ -43,11 +43,11 @@ spec:
                 secretKeyRef:
                   name: auth-secret
                   key: REFRESH_TOKEN_SECRET_KEY
-            - name: REFESH_TOKEN_EXPIRES_IN
+            - name: REFRESH_TOKEN_EXPIRES_IN
               valueFrom:
                 configMapKeyRef:
                   name: auth-configmap
-                  key: REFESH_TOKEN_EXPIRES_IN
+                  key: REFRESH_TOKEN_EXPIRES_IN
             - name: AUTH_SERVICE_HTTP_PORT
               valueFrom:
                 configMapKeyRef:
