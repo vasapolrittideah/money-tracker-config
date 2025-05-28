@@ -7,4 +7,4 @@ resources:
 namespace: auth-service-dev
 
 patches:
-  - path: ingress-http.yml
+  - path: ingress.yml
