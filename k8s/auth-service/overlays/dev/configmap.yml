@@ -4,7 +4,7 @@ metadata:
   name: auth-configmap
 data:
   ACCESS_TOKEN_EXPIRES_IN: "15m"
-  REFRESH_TOKEN_EXPIRES_IN: "7d"
+  REFRESH_TOKEN_EXPIRES_IN: "720h"
   AUTH_SERVICE_HTTP_PORT: "8001"
   USER_SERVICE_GRPC_CONNECTION_HOST: "user-service.user-service-dev.svc.cluster.local"
   USER_SERVICE_GRPC_PORT: "9000"
