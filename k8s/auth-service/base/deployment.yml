@@ -18,8 +18,7 @@ spec:
         - name: auth
           image: vasapolrittideah/money-tracker-api-auth:latest
           ports:
-            - containerPort: 8080
-              name: http
+            - containerPort: 8001
           resources:
             requests:
               memory: "64Mi"
